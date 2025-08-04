@@ -4,108 +4,19 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink, Github } from "lucide-react";
+import { 
+  curricularProjects, 
+  extracurricularProjects, 
+  allProjects, 
+  getAllTags,
+  type Project 
+} from "@/data/projects";
 
 const Projects = () => {
   const [selectedSkill, setSelectedSkill] = useState("All");
 
-  const curricularProjects = [
-    {
-      title: "Advanced Control Systems Design",
-      description: "Designed and implemented a robust control system for autonomous drone navigation with obstacle avoidance capabilities.",
-      tags: ["Control Systems", "MATLAB", "Simulink", "C++", "Embedded Systems"],
-      status: "Completed",
-      image: "🎓",
-      category: "curricular"
-    },
-    {
-      title: "Structural Analysis Software",
-      description: "Developed finite element analysis software for structural engineering applications with real-time visualization.",
-      tags: ["FEA", "Python", "NumPy", "Structural Engineering", "Visualization"],
-      status: "Completed",
-      image: "🏗️",
-      category: "curricular"
-    },
-    {
-      title: "Digital Signal Processing Lab",
-      description: "Implemented various DSP algorithms for audio processing and noise cancellation in communication systems.",
-      tags: ["Signal Processing", "MATLAB", "DSP", "Audio Processing", "Algorithms"],
-      status: "Completed",
-      image: "📊",
-      category: "curricular"
-    },
-    {
-      title: "Microprocessor System Design",
-      description: "Designed and built a complete microprocessor-based system for industrial automation and monitoring.",
-      tags: ["Microprocessors", "Assembly", "C", "Hardware Design", "Automation"],
-      status: "Completed",
-      image: "💾",
-      category: "curricular"
-    },
-    {
-      title: "Thermodynamics Simulation Tool",
-      description: "Created a comprehensive simulation environment for thermodynamic cycles and energy system analysis.",
-      tags: ["Thermodynamics", "Python", "Simulation", "Energy Systems", "Modeling"],
-      status: "Completed",
-      image: "🌡️",
-      category: "curricular"
-    }
-  ];
-
-  const extracurricularProjects = [
-    {
-      title: "Smart IoT Control System",
-      description: "Developed an intelligent IoT system for automated building management with real-time monitoring and energy optimization.",
-      tags: ["IoT", "Python", "Arduino", "React", "MongoDB"],
-      status: "Completed",
-      image: "🏢",
-      category: "extracurricular"
-    },
-    {
-      title: "Machine Learning Pipeline",
-      description: "Built a scalable ML pipeline for predictive maintenance in manufacturing environments, reducing downtime by 40%.",
-      tags: ["Machine Learning", "Python", "TensorFlow", "Docker", "AWS"],
-      status: "Completed",
-      image: "🤖",
-      category: "extracurricular"
-    },
-    {
-      title: "Robotics Automation Framework",
-      description: "Designed and implemented a comprehensive robotics framework for automated warehouse operations.",
-      tags: ["Robotics", "C++", "ROS", "Computer Vision", "Linux"],
-      status: "In Progress",
-      image: "🦾",
-      category: "extracurricular"
-    },
-    {
-      title: "Renewable Energy Optimizer",
-      description: "Created an optimization algorithm for solar panel positioning and energy storage management systems.",
-      tags: ["Optimization", "MATLAB", "Simulink", "Energy Systems", "Algorithms"],
-      status: "Completed",
-      image: "⚡",
-      category: "extracurricular"
-    },
-    {
-      title: "Autonomous Vehicle Simulation",
-      description: "Built a comprehensive simulation environment for testing autonomous vehicle algorithms and safety systems.",
-      tags: ["Simulation", "Python", "OpenCV", "AI", "Autonomous Systems"],
-      status: "In Progress",
-      image: "🚗",
-      category: "extracurricular"
-    },
-    {
-      title: "Open Source Hardware Platform",
-      description: "Developed an open-source hardware platform for rapid prototyping of embedded systems and IoT devices.",
-      tags: ["Hardware Design", "PCB Design", "Arduino", "Open Source", "Prototyping"],
-      status: "Completed",
-      image: "🔧",
-      category: "extracurricular"
-    }
-  ];
-
-  const allProjects = [...curricularProjects, ...extracurricularProjects];
-
   // Extract all unique skills from projects
-  const allSkills = ["All", ...new Set(allProjects.flatMap(project => project.tags))].sort();
+  const allSkills = getAllTags();
 
   const getFilteredProjects = (projects: typeof allProjects) => {
     if (selectedSkill === "All") return projects;
@@ -160,6 +71,8 @@ const Projects = () => {
               <Button 
                 size="sm" 
                 className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={() => project.demoUrl && window.open(project.demoUrl, '_blank')}
+                disabled={!project.demoUrl}
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 View Project
@@ -168,6 +81,8 @@ const Projects = () => {
                 size="sm" 
                 variant="outline"
                 className="border-primary/30 hover:bg-primary/5"
+                onClick={() => project.githubUrl && window.open(project.githubUrl, '_blank')}
+                disabled={!project.githubUrl}
               >
                 <Github className="w-4 h-4" />
               </Button>

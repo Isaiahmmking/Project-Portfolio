@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -83,6 +84,11 @@ const Hero = () => {
           {/* Overlay for better text readability if needed */}
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-primary/10" />
         </div>
+      </div>
+      
+      {/* Scroll Down Arrow */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ChevronDown className="w-8 h-8 text-primary animate-pulse" />
       </div>
     </section>
   );

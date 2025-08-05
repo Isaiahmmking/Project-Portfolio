@@ -26,8 +26,7 @@ const Navigation = () => {
   const navItems = [
     { label: "About", id: "about" },
     { label: "Projects", id: "projects" },
-    { label: "Skills", id: "skills" },
-    { label: "Contact", id: "contact" }
+    { label: "Skills", id: "skills" }
   ];
 
   return (

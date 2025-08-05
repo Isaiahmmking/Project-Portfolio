@@ -51,8 +51,8 @@ const Hero = () => {
                 </p>
               </div>
               
-              {/* Action Buttons */}
-              <div className="flex flex-col gap-4 mt-8">
+              {/* Action Button */}
+              <div className="mt-8">
                 <Button 
                   size="lg" 
                   variant="secondary"
@@ -60,14 +60,6 @@ const Hero = () => {
                   onClick={() => scrollToSection('projects')}
                 >
                   View My Projects
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="w-fit border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                  onClick={() => scrollToSection('contact')}
-                >
-                  Get In Touch
                 </Button>
               </div>
             </div>

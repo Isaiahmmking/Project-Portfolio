@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -10,61 +9,86 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBackground} 
-          alt="Engineering background" 
-          className="w-full h-full object-cover opacity-10"
-        />
-        <div className="absolute inset-0 bg-gradient-hero" />
-      </div>
-      
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            Engineering
-            <span className="block bg-gradient-primary bg-clip-text text-transparent">
-              Excellence
-            </span>
-          </h1>
+    <section className="relative min-h-screen flex items-center">
+      <div className="w-full h-full flex">
+        {/* Left Side - Dark with Name and Content */}
+        <div className="w-1/2 bg-primary text-primary-foreground relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:50px_50px]" />
+          </div>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Transforming innovative ideas into impactful engineering solutions through 
-            cutting-edge technology and meticulous design.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-all duration-300 hover:scale-105"
-              onClick={() => scrollToSection('projects')}
-            >
-              View My Projects
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary/5 transition-all duration-300"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get In Touch
-            </Button>
+          <div className="relative z-10 h-full flex flex-col justify-center px-12 lg:px-16">
+            <div className="animate-fade-in">
+              {/* Name */}
+              <h1 className="text-6xl lg:text-8xl font-bold mb-8 leading-none">
+                Isaiah
+                <span className="block">King</span>
+              </h1>
+              
+              {/* Introduction */}
+              <div className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4 border-b border-primary-foreground/20 pb-2">
+                  Introduction:
+                </h2>
+                <p className="text-lg leading-relaxed mb-8">
+                  This is my personal portfolio. Here, I have organized
+                  all of my projects based on content, software and
+                  curricular relation
+                </p>
+              </div>
+              
+              {/* How to use */}
+              <div className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4 border-b border-primary-foreground/20 pb-2">
+                  How to use this page:
+                </h2>
+                <p className="text-lg leading-relaxed">
+                  On the left, click on the topic/skill you are interested
+                  in viewing and you will automatically be directed to
+                  various projects where these skills apply
+                </p>
+              </div>
+              
+              {/* Action Buttons */}
+              <div className="flex flex-col gap-4 mt-8">
+                <Button 
+                  size="lg" 
+                  variant="secondary"
+                  className="w-fit"
+                  onClick={() => scrollToSection('projects')}
+                >
+                  View My Projects
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="w-fit border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Get In Touch
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
         
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '0s' }} />
-        <div className="absolute top-40 right-20 w-2 h-2 bg-primary-glow/40 rounded-full animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-40 left-20 w-4 h-4 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '4s' }} />
+        {/* Right Side - Large Portrait */}
+        <div className="w-1/2 relative overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1200&fit=crop&crop=face"
+            alt="Isaiah King Portrait" 
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay for better text readability if needed */}
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-primary/10" />
+        </div>
       </div>
       
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary/50 rounded-full mt-2 animate-pulse" />
+        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-primary/70 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>

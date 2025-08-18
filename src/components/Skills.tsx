@@ -7,12 +7,12 @@ const Skills = () => {
       categories: [
         {
           title: "Advanced",
-          description: "Expert-level proficiency with extensive experience",
+          description: "Extended experience",
           skills: ["JavaScript", "C++"]
         },
         {
           title: "Intermediate", 
-          description: "Solid working knowledge and practical experience",
+          description: "practical experience",
           skills: ["MATLAB", "Python"]
         },
         {
@@ -27,12 +27,12 @@ const Skills = () => {
       categories: [
         {
           title: "Advanced",
-          description: "Expert-level proficiency with extensive experience",
+          description: "Extended experience",
           skills: ["AutoCAD", "SolidWorks", "Revit", "Microsoft Office Tools", "Oscilloscopes", "Function generators", "Quartus", "LTSpice"]
         },
         {
           title: "Intermediate", 
-          description: "Solid working knowledge and practical experience",
+          description: "practical experience",
           skills: ["Altium", "Signal Processing", "Eagle"]
         },
         {

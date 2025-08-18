@@ -45,23 +45,19 @@ const About = () => {
           
           <div className="animate-scale-in">
             <div className="bg-gradient-card rounded-2xl p-8 shadow-card border border-border">
-              <h4 className="text-xl font-semibold mb-6 text-foreground">Quick Facts</h4>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Experience</span>
-                  <span className="font-semibold text-foreground">5+ Years</span>
+              <h4 className="text-xl font-semibold mb-6 text-foreground">Hobbies & Passions</h4>
+              <div className="space-y-6">
+                <div>
+                  <h5 className="font-semibold text-foreground mb-2">Music</h5>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    I have been a lifelong musician, from classical piano to thrash drumming, and music has deeply shaped my creativity, discipline, and ability to collaborate in group settings.
+                  </p>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Projects Completed</span>
-                  <span className="font-semibold text-foreground">25+</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Technologies</span>
-                  <span className="font-semibold text-foreground">15+</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Certifications</span>
-                  <span className="font-semibold text-foreground">8</span>
+                <div>
+                  <h5 className="font-semibold text-foreground mb-2">Sports</h5>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Competing at a high level in multiple sports, including varsity wrestling at Simon Fraser University and national baseball tournaments, has instilled in me a strong work ethic, resilience, and the ability to adapt and thrive within a team environment.
+                  </p>
                 </div>
               </div>
             </div>

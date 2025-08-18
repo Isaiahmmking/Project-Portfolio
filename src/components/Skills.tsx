@@ -1,28 +1,45 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Skills = () => {
-  const skillCategories = [
+  const skillSections = [
     {
-      title: "Advanced",
-      description: "Expert-level proficiency with extensive experience",
-      skills: [
-        "Python", "C++", "MATLAB", "AutoCAD", "SolidWorks", 
-        "Signal Processing", "Machine Learning", "Git"
+      title: "Programming Languages",
+      categories: [
+        {
+          title: "Advanced",
+          description: "Expert-level proficiency with extensive experience",
+          skills: ["Python", "C++", "MATLAB"]
+        },
+        {
+          title: "Intermediate", 
+          description: "Solid working knowledge and practical experience",
+          skills: ["JavaScript", "React", "Node.js"]
+        },
+        {
+          title: "Proficient",
+          description: "Competent with foundational understanding",
+          skills: ["HTML/CSS", "Java"]
+        }
       ]
     },
     {
-      title: "Intermediate", 
-      description: "Solid working knowledge and practical experience",
-      skills: [
-        "JavaScript", "React", "ANSYS", "Simulink", "LabVIEW",
-        "IoT Systems", "Computer Vision", "Docker", "Node.js"
-      ]
-    },
-    {
-      title: "Proficient",
-      description: "Competent with foundational understanding",
-      skills: [
-        "HTML/CSS", "Linux", "MATLAB"
+      title: "Hardware/Tools",
+      categories: [
+        {
+          title: "Advanced",
+          description: "Expert-level proficiency with extensive experience",
+          skills: ["AutoCAD", "SolidWorks", "Signal Processing", "Machine Learning", "Git"]
+        },
+        {
+          title: "Intermediate", 
+          description: "Solid working knowledge and practical experience",
+          skills: ["ANSYS", "Simulink", "LabVIEW", "IoT Systems", "Computer Vision", "Docker"]
+        },
+        {
+          title: "Proficient",
+          description: "Competent with foundational understanding",
+          skills: ["Linux", "AWS", "Robotics", "Cloud Architecture"]
+        }
       ]
     }
   ];
@@ -39,35 +56,44 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => (
-            <Card 
-              key={index} 
-              className="bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300 animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-foreground">
-                  {category.title}
-                </CardTitle>
-                <p className="text-sm text-muted-foreground mt-2">
-                  {category.description}
-                </p>
-              </CardHeader>
+        <div className="grid lg:grid-cols-2 gap-12">
+          {skillSections.map((section, sectionIndex) => (
+            <div key={sectionIndex} className="space-y-6">
+              <h3 className="text-3xl font-bold text-center text-foreground mb-8">
+                {section.title}
+              </h3>
               
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <span 
-                      key={skillIndex}
-                      className="px-3 py-2 rounded-full text-sm font-medium bg-muted text-muted-foreground border border-border"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+              <div className="space-y-6">
+                {section.categories.map((category, categoryIndex) => (
+                  <Card 
+                    key={categoryIndex} 
+                    className="bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300"
+                  >
+                    <CardHeader>
+                      <CardTitle className="text-xl font-bold text-foreground">
+                        {category.title}
+                      </CardTitle>
+                      <p className="text-sm text-muted-foreground">
+                        {category.description}
+                      </p>
+                    </CardHeader>
+                    
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {category.skills.map((skill, skillIndex) => (
+                          <span 
+                            key={skillIndex}
+                            className="px-3 py-2 rounded-full text-sm font-medium bg-muted text-muted-foreground border border-border"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
         

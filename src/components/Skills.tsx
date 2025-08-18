@@ -1,47 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Advanced",
+      description: "Expert-level proficiency with extensive experience",
       skills: [
-        { name: "Python", level: 95 },
-        { name: "C++", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "MATLAB", level: 88 },
-        { name: "Java", level: 82 }
-      ]
+        "Python", "C++", "MATLAB", "AutoCAD", "SolidWorks", 
+        "Signal Processing", "Machine Learning", "Git"
+      ],
+      bgColor: "bg-green-500/10",
+      textColor: "text-green-500",
+      borderColor: "border-green-500/20"
     },
     {
-      title: "Engineering Tools",
+      title: "Intermediate", 
+      description: "Solid working knowledge and practical experience",
       skills: [
-        { name: "AutoCAD", level: 92 },
-        { name: "SolidWorks", level: 88 },
-        { name: "ANSYS", level: 85 },
-        { name: "Simulink", level: 90 },
-        { name: "LabVIEW", level: 87 }
-      ]
+        "JavaScript", "React", "ANSYS", "Simulink", "LabVIEW",
+        "IoT Systems", "Computer Vision", "Docker", "Node.js"
+      ],
+      bgColor: "bg-blue-500/10",
+      textColor: "text-blue-500", 
+      borderColor: "border-blue-500/20"
     },
     {
-      title: "Technologies & Frameworks",
+      title: "Proficient",
+      description: "Competent with foundational understanding",
       skills: [
-        { name: "Machine Learning", level: 90 },
-        { name: "IoT Systems", level: 88 },
-        { name: "Robotics", level: 85 },
-        { name: "Signal Processing", level: 92 },
-        { name: "Computer Vision", level: 86 }
-      ]
-    },
-    {
-      title: "Development & Cloud",
-      skills: [
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
-        { name: "Git", level: 95 },
-        { name: "React", level: 88 },
-        { name: "Node.js", level: 82 }
-      ]
+        "Java", "AWS", "Robotics", "Cloud Architecture"
+      ],
+      bgColor: "bg-orange-500/10",
+      textColor: "text-orange-500",
+      borderColor: "border-orange-500/20"
     }
   ];
 
@@ -57,36 +48,33 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className="bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300 animate-scale-in"
+              className={`bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300 animate-scale-in ${category.borderColor}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold text-foreground">
+              <CardHeader className="text-center">
+                <CardTitle className={`text-2xl font-bold ${category.textColor}`}>
                   {category.title}
                 </CardTitle>
+                <p className="text-sm text-muted-foreground mt-2">
+                  {category.description}
+                </p>
               </CardHeader>
               
-              <CardContent className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-foreground">
-                        {skill.name}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <Progress 
-                      value={skill.level} 
-                      className="h-2 bg-muted"
-                    />
-                  </div>
-                ))}
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <span 
+                      key={skillIndex}
+                      className={`px-3 py-2 rounded-full text-sm font-medium ${category.bgColor} ${category.textColor} border ${category.borderColor}`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           ))}

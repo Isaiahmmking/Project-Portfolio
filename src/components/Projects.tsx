@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { ExternalLink, Github, Search } from "lucide-react";
 import { 
   curricularProjects, 
@@ -137,6 +138,29 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of innovative engineering solutions and technical achievements across academic and personal projects.
+          </p>
+        </div>
+
+        {/* Skills Showcase */}
+        <div className="mb-8 animate-fade-in">
+          <h3 className="text-lg font-semibold mb-4 text-center text-foreground">Skills & Technologies</h3>
+          <ScrollArea className="w-full whitespace-nowrap">
+            <div className="flex space-x-3 pb-4">
+              {getAllTags().filter(tag => tag !== "All").map((skill) => (
+                <Badge
+                  key={skill}
+                  variant="outline"
+                  className="cursor-pointer border-primary/30 text-primary hover:bg-primary/10 transition-colors shrink-0"
+                  onClick={() => setSearchTerm(skill)}
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+            <ScrollBar orientation="horizontal" />
+          </ScrollArea>
+          <p className="text-center text-sm text-muted-foreground mt-2">
+            Click any skill to search for related projects
           </p>
         </div>
 

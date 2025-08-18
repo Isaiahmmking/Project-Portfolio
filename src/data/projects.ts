@@ -24,7 +24,19 @@ export const curricularProjects: Project[] = [
   }
 ];
 
-export const extracurricularProjects: Project[] = [];
+export const extracurricularProjects: Project[] = [
+  {
+    title: "Rodent repellant device",
+    description: "Created a Raspberry Pi 5-powered pest deterrent using YOLOv8 image processing to detect rodents and trigger automated defense mechanisms",
+    tags: ["RaspberryPi5", "C++", "Javascript"],
+    status: "In Progress",
+    image: "🐭",
+    category: "extracurricular",
+    demoUrl: "",
+    githubUrl: "",
+    featured: true
+  }
+];
 
 export const allProjects = [...curricularProjects, ...extracurricularProjects];
 

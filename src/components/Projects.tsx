@@ -144,21 +144,32 @@ const Projects = () => {
         {/* Skills Showcase */}
         <div className="mb-8 animate-fade-in">
           <h3 className="text-lg font-semibold mb-4 text-center text-foreground">Skills & Technologies</h3>
-          <ScrollArea className="w-full whitespace-nowrap">
-            <div className="flex space-x-3 pb-4">
+          <div className="relative overflow-hidden bg-gradient-subtle rounded-lg p-4 border border-border">
+            <div className="flex animate-marquee space-x-4">
+              {/* First set of skills */}
               {getAllTags().filter(tag => tag !== "All").map((skill) => (
                 <Badge
                   key={skill}
                   variant="outline"
-                  className="cursor-pointer border-primary/30 text-primary hover:bg-primary/10 transition-colors shrink-0"
+                  className="cursor-pointer border-primary/30 text-primary hover:bg-primary/10 transition-colors shrink-0 hover:scale-105"
+                  onClick={() => setSearchTerm(skill)}
+                >
+                  {skill}
+                </Badge>
+              ))}
+              {/* Duplicate for seamless loop */}
+              {getAllTags().filter(tag => tag !== "All").map((skill) => (
+                <Badge
+                  key={`${skill}-duplicate`}
+                  variant="outline"
+                  className="cursor-pointer border-primary/30 text-primary hover:bg-primary/10 transition-colors shrink-0 hover:scale-105"
                   onClick={() => setSearchTerm(skill)}
                 >
                   {skill}
                 </Badge>
               ))}
             </div>
-            <ScrollBar orientation="horizontal" />
-          </ScrollArea>
+          </div>
           <p className="text-center text-sm text-muted-foreground mt-2">
             Click any skill to search for related projects
           </p>

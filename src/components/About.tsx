@@ -17,7 +17,7 @@ const About = () => {
               My Background
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              I was born and raised in Las Vegas, Nevada, where I attended West Career and Technical Academy with a concentration in engineering. After graduation, I competed as a varsity wrestler at Simon Fraser University before deciding to focus fully on my career. Now a rising junior, I am pursuing a degree in Systems Engineering with a minor in Business, with particular interest in system automation, embedded systems, and large-scale system design.
+              I was born and raised in Las Vegas, Nevada, where I attended West Career and Technical Academy with a concentration in engineering. After graduation, I attended Simon Fraser University pursuing a degree in Systems Engineering with a minor in Business. Now a rising junior, I aim to learn more about automation, embedded systems, and large-scale system design.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               With a strong foundation in engineering principles and technology, I strive to deliver meaningful and impactful results in every project I take on.

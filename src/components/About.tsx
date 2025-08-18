@@ -22,25 +22,6 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed">
               With a strong foundation in engineering principles and technology, I strive to deliver meaningful and impactful results in every project I take on.
             </p>
-            
-            <div className="space-y-4 mt-8">
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <span className="text-foreground font-medium">Problem-solving mindset</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <span className="text-foreground font-medium">Continuous learning approach</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <span className="text-foreground font-medium">Collaborative team player</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <span className="text-foreground font-medium">Innovation-driven results</span>
-              </div>
-            </div>
           </div>
           
           <div className="animate-scale-in">

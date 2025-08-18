@@ -18,7 +18,7 @@ const Skills = () => {
         {
           title: "Proficient",
           description: "Competent with foundational understanding",
-          skills: ["React", "Linux", "SQL"]
+          skills: ["React", "Linux", "SQL", "MacOS"]
         }
       ]
     },

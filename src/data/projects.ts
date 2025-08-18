@@ -68,6 +68,17 @@ export const extracurricularProjects: Project[] = [
     demoUrl: "",
     githubUrl: "",
     featured: true
+  },
+  {
+    title: "Custom snare drum throwoff and butt plate",
+    description: "Engineered a mechanical drum hardware system with a three-stage tightening mechanism for enhanced performance and playability.",
+    tags: ["Solidworks"],
+    status: "In Progress",
+    image: "🥁",
+    category: "extracurricular",
+    demoUrl: "",
+    githubUrl: "",
+    featured: true
   }
 ];
 

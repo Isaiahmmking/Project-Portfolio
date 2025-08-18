@@ -14,7 +14,7 @@ export const curricularProjects: Project[] = [
   {
     title: "Risc-V Processor Pipeline Simulator",
     description: "Designed and developed a C++ cycle accurate simulator for a single issue five-stage RISC-V pipeline Implemented load–use hazard detection in the ID stage with one-cycle stalls and bubble insertion",
-    tags: ["Bash", "Linux", "C++"],
+    tags: ["Linux", "C++"],
     status: "Completed",
     image: "💾",
     category: "curricular",

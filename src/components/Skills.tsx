@@ -28,17 +28,17 @@ const Skills = () => {
         {
           title: "Advanced",
           description: "Expert-level proficiency with extensive experience",
-          skills: ["AutoCAD", "SolidWorks", "Signal Processing", "Machine Learning", "Git"]
+          skills: ["AutoCAD", "SolidWorks", "Revit", "Microsoft Office Tools", "Oscilloscopes", "Function generators", "Quartus", "LTSpice"]
         },
         {
           title: "Intermediate", 
           description: "Solid working knowledge and practical experience",
-          skills: ["ANSYS", "Simulink", "LabVIEW", "IoT Systems", "Computer Vision", "Docker"]
+          skills: ["Altium", "Signal Processing", "Eagle"]
         },
         {
           title: "Proficient",
           description: "Competent with foundational understanding",
-          skills: ["Linux", "AWS", "Robotics", "Cloud Architecture"]
+          skills: ["LabVIEW", "Simulink", "ANSYS"]
         }
       ]
     }

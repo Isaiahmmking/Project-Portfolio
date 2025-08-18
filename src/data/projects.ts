@@ -21,6 +21,17 @@ export const curricularProjects: Project[] = [
     demoUrl: "",
     githubUrl: "",
     featured: true
+  },
+  {
+    title: "Fall Detection Device",
+    description: "Built an Arduino Nano-based C++ alert system with a custom 3D-printed shell to notify healthcare workers of patient falls, improving safety and response time.",
+    tags: ["ArduinoIDE", "C++", "Teamwork", "Solidworks"],
+    status: "Completed",
+    image: "🚨",
+    category: "curricular",
+    demoUrl: "",
+    githubUrl: "",
+    featured: true
   }
 ];
 

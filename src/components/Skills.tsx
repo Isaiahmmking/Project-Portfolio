@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const Skills = () => {
   const skillSections = [
     {
-      title: "Programming Languages",
+      title: "Programming languages and Operation systems",
       categories: [
         {
           title: "Advanced",

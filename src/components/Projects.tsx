@@ -117,7 +117,7 @@ const Projects = () => {
             onClick={onLoadMore}
             className="border-primary/30 text-primary hover:bg-primary/10"
           >
-            Load More ({projects.length - visible} remaining)
+            Load More
           </Button>
         </div>
       )}

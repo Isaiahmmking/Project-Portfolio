@@ -7,24 +7,20 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate engineer with expertise in innovative problem-solving and cutting-edge technology implementation.
+            I'm a Systems Engineering student with a strong foundation in engineering project development, and I pride myself on being coachable, adaptable, and eager to learn new skills.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <h3 className="text-2xl font-semibold text-foreground mb-4">
-              Engineering Philosophy
+              My Background
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              I believe in creating solutions that not only solve complex problems but also enhance 
-              user experiences and drive technological advancement. My approach combines analytical 
-              thinking with creative innovation to deliver impactful results.
+              I was born and raised in Las Vegas, Nevada, where I attended West Career and Technical Academy with a concentration in engineering. After graduation, I competed as a varsity wrestler at Simon Fraser University before deciding to focus fully on my career. Now a rising junior, I am pursuing a degree in Systems Engineering with a minor in Business, with particular interest in system automation, embedded systems, and large-scale system design.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With a strong foundation in engineering principles and a passion for emerging 
-              technologies, I strive to bridge the gap between theoretical knowledge and 
-              practical application in every project I undertake.
+              With a strong foundation in engineering principles and technology, I strive to deliver meaningful and impactful results in every project I take on.
             </p>
             
             <div className="space-y-4 mt-8">

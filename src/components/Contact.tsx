@@ -70,6 +70,7 @@ const Contact = () => {
                   variant="outline" 
                   size="sm"
                   className="border-primary/30 hover:bg-primary/5"
+                  onClick={() => window.open('https://www.linkedin.com/in/isaiahking2004/', '_blank')}
                 >
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
@@ -78,6 +79,7 @@ const Contact = () => {
                   variant="outline" 
                   size="sm"
                   className="border-primary/30 hover:bg-primary/5"
+                  onClick={() => window.open('#', '_blank')}
                 >
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
@@ -86,6 +88,7 @@ const Contact = () => {
                   variant="outline" 
                   size="sm"
                   className="border-primary/30 hover:bg-primary/5"
+                  onClick={() => window.open('#', '_blank')}
                 >
                   <FileText className="w-4 h-4 mr-2" />
                   Resume

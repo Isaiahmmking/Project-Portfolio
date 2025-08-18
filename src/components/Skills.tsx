@@ -8,17 +8,17 @@ const Skills = () => {
         {
           title: "Advanced",
           description: "Expert-level proficiency with extensive experience",
-          skills: ["Python", "C++", "MATLAB"]
+          skills: ["JavaScript", "C++"]
         },
         {
           title: "Intermediate", 
           description: "Solid working knowledge and practical experience",
-          skills: ["JavaScript", "React", "Node.js"]
+          skills: ["MATLAB", "Python"]
         },
         {
           title: "Proficient",
           description: "Competent with foundational understanding",
-          skills: ["HTML/CSS", "Java"]
+          skills: ["React", "Linux", "SQL"]
         }
       ]
     },

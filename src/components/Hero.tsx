@@ -29,25 +29,8 @@ const Hero = () => {
               
               {/* Introduction */}
               <div className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4 border-b border-primary-foreground/20 pb-2">
-                  Introduction:
-                </h2>
-                <p className="text-lg leading-relaxed mb-8">
-                  This is my personal portfolio. Here, I have organized
-                  all of my projects based on content, software and
-                  curricular relation
-                </p>
-              </div>
-              
-              {/* How to use */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4 border-b border-primary-foreground/20 pb-2">
-                  How to use this page:
-                </h2>
                 <p className="text-lg leading-relaxed">
-                  On the left, click on the topic/skill you are interested
-                  in viewing and you will automatically be directed to
-                  various projects where these skills apply
+                  Welcome to my personal portfolio! This site showcases a collection of my projects I have finish and am currently working on. It also provides a complete overview of the tools, frameworks, and skills I have expereince in.
                 </p>
               </div>
               

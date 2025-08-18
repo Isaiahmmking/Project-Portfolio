@@ -57,6 +57,17 @@ export const extracurricularProjects: Project[] = [
     demoUrl: "",
     githubUrl: "",
     featured: true
+  },
+  {
+    title: "Custom smart watch",
+    description: "Designed and developed an ATmega328P-based OLED smartwatch with custom display, time tracking, and power regulation systems.",
+    tags: ["Microprocessor", "C++", "Embedded Systems", "Solidworks"],
+    status: "In Progress",
+    image: "⌚",
+    category: "extracurricular",
+    demoUrl: "",
+    githubUrl: "",
+    featured: true
   }
 ];
 

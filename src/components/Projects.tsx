@@ -175,35 +175,6 @@ const Projects = () => {
           />
         </div>
 
-        {/* Summary Stats */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-card rounded-2xl p-8 shadow-card border border-border max-w-2xl mx-auto">
-            <h4 className="text-xl font-semibold mb-4 text-foreground">Project Portfolio Summary</h4>
-            <div className="grid grid-cols-3 gap-6">
-              <div>
-                <div className="text-2xl font-bold text-primary">
-                  {filteredCurricularProjects.length + filteredExtracurricularProjects.length}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {searchTerm ? "Filtered" : "Total"} Projects
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">
-                  {getAllTags().length - 1}
-                </div>
-                <div className="text-sm text-muted-foreground">Technologies</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">
-                  {[...filteredCurricularProjects, ...filteredExtracurricularProjects]
-                    .filter(p => p.status === "Completed").length}
-                </div>
-                <div className="text-sm text-muted-foreground">Completed</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

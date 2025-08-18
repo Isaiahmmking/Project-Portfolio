@@ -96,52 +96,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-card rounded-2xl p-8 shadow-card border border-border max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">
-              Certifications & Achievements
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">Professional Engineer (PE) License</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">AWS Certified Solutions Architect</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">Certified SolidWorks Professional</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">Six Sigma Green Belt</span>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">Project Management Professional (PMP)</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">Certified Robotics Engineer</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">Machine Learning Specialization</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="text-foreground">IEEE Member & Published Researcher</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

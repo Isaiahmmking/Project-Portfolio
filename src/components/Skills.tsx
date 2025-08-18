@@ -12,7 +12,7 @@ const Skills = () => {
         },
         {
           title: "Intermediate", 
-          description: "practical experience",
+          description: "Practical experience",
           skills: ["MATLAB", "Python"]
         },
         {
@@ -32,7 +32,7 @@ const Skills = () => {
         },
         {
           title: "Intermediate", 
-          description: "practical experience",
+          description: "Practical experience",
           skills: ["Altium", "Signal Processing", "Eagle"]
         },
         {

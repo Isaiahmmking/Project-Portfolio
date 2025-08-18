@@ -25,7 +25,7 @@ export const curricularProjects: Project[] = [
   {
     title: "Fall Detection Device",
     description: "Built an Arduino Nano-based C++ alert system with a custom 3D-printed shell to notify healthcare workers of patient falls, improving safety and response time.",
-    tags: ["ArduinoIDE", "C++", "Teamwork", "Solidworks"],
+    tags: ["ArduinoIDE", "C++", "Teamwork", "Solidworks","Embedded Systems"],
     status: "Completed",
     image: "🚨",
     category: "curricular",
@@ -37,7 +37,7 @@ export const curricularProjects: Project[] = [
 
 export const extracurricularProjects: Project[] = [
   {
-    title: "Rodent repellant device",
+    title: "Rodent repellent device",
     description: "Created a Raspberry Pi 5-powered pest deterrent using YOLOv8 image processing to detect rodents and trigger automated defense mechanisms",
     tags: ["RaspberryPi5", "C++", "JavaScript"],
     status: "In Progress",
@@ -48,7 +48,7 @@ export const extracurricularProjects: Project[] = [
     featured: true
   },
   {
-    title: "Steper Motor Organ",
+    title: "Stepper Motor Organ",
     description: "Contributed to an open source project by optimizing JavaScript code, and enhanced musical output and circuit functionality.",
     tags: ["ArduinoIDE", "C++", "JavaScript", "Solidworks"],
     status: "Completed",

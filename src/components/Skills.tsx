@@ -8,10 +8,7 @@ const Skills = () => {
       skills: [
         "Python", "C++", "MATLAB", "AutoCAD", "SolidWorks", 
         "Signal Processing", "Machine Learning", "Git"
-      ],
-      bgColor: "bg-green-500/10",
-      textColor: "text-green-500",
-      borderColor: "border-green-500/20"
+      ]
     },
     {
       title: "Intermediate", 
@@ -19,20 +16,14 @@ const Skills = () => {
       skills: [
         "JavaScript", "React", "ANSYS", "Simulink", "LabVIEW",
         "IoT Systems", "Computer Vision", "Docker", "Node.js"
-      ],
-      bgColor: "bg-blue-500/10",
-      textColor: "text-blue-500", 
-      borderColor: "border-blue-500/20"
+      ]
     },
     {
       title: "Proficient",
       description: "Competent with foundational understanding",
       skills: [
         "Java", "AWS", "Robotics", "Cloud Architecture"
-      ],
-      bgColor: "bg-orange-500/10",
-      textColor: "text-orange-500",
-      borderColor: "border-orange-500/20"
+      ]
     }
   ];
 
@@ -52,11 +43,11 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className={`bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300 animate-scale-in ${category.borderColor}`}
+              className="bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="text-center">
-                <CardTitle className={`text-2xl font-bold ${category.textColor}`}>
+                <CardTitle className="text-2xl font-bold text-foreground">
                   {category.title}
                 </CardTitle>
                 <p className="text-sm text-muted-foreground mt-2">
@@ -69,7 +60,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <span 
                       key={skillIndex}
-                      className={`px-3 py-2 rounded-full text-sm font-medium ${category.bgColor} ${category.textColor} border ${category.borderColor}`}
+                      className="px-3 py-2 rounded-full text-sm font-medium bg-muted text-muted-foreground border border-border"
                     >
                       {skill}
                     </span>

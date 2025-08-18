@@ -134,10 +134,10 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Featured Projects
+            Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of innovative engineering solutions and technical achievements across academic and personal projects.
+            An up to date showcase of all my projects and technical achievements
           </p>
         </div>
 

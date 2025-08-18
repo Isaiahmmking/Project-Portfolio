@@ -46,6 +46,17 @@ export const extracurricularProjects: Project[] = [
     demoUrl: "",
     githubUrl: "",
     featured: true
+  },
+  {
+    title: "Steper Motor Organ",
+    description: "Contributed to an open source project by optimizing JavaScript code, and enhanced musical output and circuit functionality.",
+    tags: ["ArduinoIDE", "C++", "JavaScript", "Solidworks"],
+    status: "Completed",
+    image: "🎵",
+    category: "extracurricular",
+    demoUrl: "",
+    githubUrl: "",
+    featured: true
   }
 ];
 

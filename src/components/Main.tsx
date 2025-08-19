@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import isaiahPortrait from '@/assets/images/profile/isaiah-portrait.png';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -52,7 +53,7 @@ const Hero = () => {
         {/* Right Side - Large Portrait */}
         <div className="w-1/2 relative overflow-hidden">
           <img 
-            src="/lovable-uploads/fd1d9b0b-45d6-4cd5-a278-75e4c4110cf0.png"
+            src={isaiahPortrait}
             alt="Isaiah King Portrait" 
             className="w-full h-full object-cover"
           />

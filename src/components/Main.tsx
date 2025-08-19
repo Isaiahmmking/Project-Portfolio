@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Right Side - Large Portrait */}
         <div className="w-1/2 relative overflow-hidden">
           <img 
-            src="/lovable-uploads/0182c55d-7426-403b-9933-a9113fac3300.png"
+            src="/lovable-uploads/fd1d9b0b-45d6-4cd5-a278-75e4c4110cf0.png"
             alt="Isaiah King Portrait" 
             className="w-full h-full object-cover"
           />

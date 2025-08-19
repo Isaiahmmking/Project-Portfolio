@@ -1,4 +1,4 @@
-import opAmpAudioFilter from '@/assets/images/projects/op-amp-audio-filter.png';
+import opAmpAudioFilter from '@/assets/images/op-amp-audio-filter.png';
 
 export interface Project {
   title: string;

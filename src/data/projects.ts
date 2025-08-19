@@ -38,7 +38,7 @@ export const curricularProjects: Project[] = [
     description: "Designed, simulated, and built an analog filter system to improve microphone audio quality by suppressing 120 Hz noise and preventing aliasing in ADC conversion. Implemented a notch filter and multi-stage low-pass filter using MATLAB and SPICE for modeling, followed by breadboard construction and lab testing to validate performance.",
     tags: ["LTSpice", "Circuitry", "Function Generator", "Oscilloscope", "Breadboard"],
     status: "Completed",
-    image: "🔊",
+    image: "/lovable-uploads/f1358324-0fc4-40ef-a3fe-934186e86b3c.png",
     category: "curricular",
     demoUrl: "",
     githubUrl: "",

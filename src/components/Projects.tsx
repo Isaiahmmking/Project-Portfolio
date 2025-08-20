@@ -39,7 +39,17 @@ const Projects = () => {
     >
       <CardHeader>
         <div className="flex items-center justify-between mb-4">
-          <div className="text-4xl">{project.image}</div>
+          <div className="text-4xl">
+            {typeof project.image === 'string' && project.image.startsWith('/') ? (
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="w-16 h-16 object-cover rounded-lg"
+              />
+            ) : (
+              project.image
+            )}
+          </div>
           <Badge 
             variant={project.status === "Completed" ? "default" : "secondary"}
             className={project.status === "Completed" ? "bg-primary text-primary-foreground" : ""}

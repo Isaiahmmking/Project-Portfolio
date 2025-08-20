@@ -113,8 +113,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Gained extensive experience leading group projects through my engineering coursework, including coordinating collaboration between hardware and software teams on technical projects. Strengthened leadership and organizational skills through roles outside the classroom, including my position as a president in jazz band, where I managed group performance goals and fostered teamwork. Across both academic and extracurricular settings, I consistently oversaw timelines, ensured deliverable quality, and created collaborative environments that emphasized problem-solving and accountability.                    </p>
-                  </CardContent>
+                    Gained extensive experience leading group projects through engineering coursework, coordinating collaboration between hardware and software teams while managing timelines and deliverables. Strengthened leadership and organizational skills outside the classroom as president of the jazz band, where I fostered teamwork, set performance goals, and built collaborative environments that emphasized problem-solving and accountability.                  </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px] bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300">
@@ -123,8 +122,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Developed systematic approaches to tackle complex engineering challenges, from circuit design optimization to algorithm development. Consistently identified root causes and implemented innovative solutions under tight deadlines.
-                    </p>
+                      Developed systematic, repeatable approaches to solve complex problems through expereince with engineering coursework and team labs—using root-cause analysis. Also have experience under pressure as a lifeguard assisting guests, creating a cordinated responses, and implementing practical fixes while maintaining safety and service. Consistently delivered results under tight timelines and documented takeaways as needed.                    </p>
                   </CardContent>
                 </Card>
 
@@ -134,7 +132,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Applied analytical reasoning to evaluate design trade-offs and technical specifications. Demonstrated ability to assess multiple solutions objectively and make data-driven decisions in high-stakes engineering projects.
+                      Applied analytical reasoning to evaluate design trade-offs and technical specifications. Demonstrated ability to assess multiple solutions objectively and make decisions based on data in high-stakes engineering projects.
                     </p>
                   </CardContent>
                 </Card>
@@ -145,7 +143,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Effectively communicated complex technical concepts to both technical and non-technical stakeholders. Delivered compelling presentations for project proposals and technical reviews to diverse audiences.
+                      Experience communicating complex technical concepts to both technical and non-technical participents. Delivered compelling presentations for project proposals and technical reviews to diverse audiences.
                     </p>
                   </CardContent>
                 </Card>
@@ -156,7 +154,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Managed multiple concurrent engineering projects from conception to completion. Coordinated resources, timelines, and deliverables while maintaining quality standards and meeting critical milestones.
+                      Experienced with managing multiple concurrent engineering projects from conception to completion. Coordinated resources, timelines, and deliverables while maintaining quality standards and meeting milestones.
                     </p>
                   </CardContent>
                 </Card>
@@ -178,7 +176,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Effectively prioritized tasks and managed competing deadlines across multiple academic and personal projects. Developed efficient workflows that maximized productivity while maintaining high-quality standards.
+                      Effectively prioritized tasks and managed competing deadlines across multiple academic and personal projects. Developed efficient workflows that maximized productivity while maintaining quality.
                     </p>
                   </CardContent>
                 </Card>
@@ -189,7 +187,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Worked effectively in diverse, multidisciplinary teams combining engineering, design, and research expertise. Built strong working relationships and facilitated knowledge sharing across different domains.
+                      Worked effectively in diverse teams combining engineering, design, and research knowledge. Experience varsity wrestling strengthened communication, coachability.
                     </p>
                   </CardContent>
                 </Card>
@@ -200,7 +198,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Applied systematic analysis to break down complex problems into manageable components. Utilized data-driven approaches to validate hypotheses and optimize system performance across various engineering applications.
+                      Applied analysis to break down complex problems into manageable components. Utilized data-driven approaches to validate hypotheses and optimize system performance across various engineering projects.
                     </p>
                   </CardContent>
                 </Card>
@@ -214,7 +212,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Led cross-functional engineering teams through complex projects, coordinating between hardware and software developers. Successfully managed project timelines and deliverables while fostering collaborative team environments.
+                    Gained extensive experience leading group projects through engineering coursework, coordinating collaboration between hardware and software teams while managing timelines and deliverables. Strengthened leadership and organizational skills outside the classroom as president of the jazz band, where I fostered teamwork, set performance goals, and built collaborative environments that emphasized problem-solving and accountability.                  </CardContent>
                     </p>
                   </CardContent>
                 </Card>
@@ -225,7 +223,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Developed systematic approaches to tackle complex engineering challenges, from circuit design optimization to algorithm development. Consistently identified root causes and implemented innovative solutions under tight deadlines.
+                      Developed systematic, repeatable approaches to solve complex problems through expereince with engineering coursework and team labs—using root-cause analysis. Also have experience under pressure as a lifeguard assisting guests, creating a cordinated responses, and implementing practical fixes while maintaining safety and service. Consistently delivered results under tight timelines and documented takeaways as needed.                    </p>
                     </p>
                   </CardContent>
                 </Card>
@@ -236,7 +234,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Applied analytical reasoning to evaluate design trade-offs and technical specifications. Demonstrated ability to assess multiple solutions objectively and make data-driven decisions in high-stakes engineering projects.
+                      Applied analytical reasoning to evaluate design trade-offs and technical specifications. Demonstrated ability to assess multiple solutions objectively and make decisions based on data in high-stakes engineering projects.
                     </p>
                   </CardContent>
                 </Card>
@@ -247,7 +245,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Effectively communicated complex technical concepts to both technical and non-technical stakeholders. Delivered compelling presentations for project proposals and technical reviews to diverse audiences.
+                      Experience communicating complex technical concepts to both technical and non-technical participents. Delivered compelling presentations for project proposals and technical reviews to diverse audiences.
                     </p>
                   </CardContent>
                 </Card>
@@ -258,7 +256,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Managed multiple concurrent engineering projects from conception to completion. Coordinated resources, timelines, and deliverables while maintaining quality standards and meeting critical milestones.
+                      Experienced with managing multiple concurrent engineering projects from conception to completion. Coordinated resources, timelines, and deliverables while maintaining quality standards and meeting milestones.
                     </p>
                   </CardContent>
                 </Card>
@@ -280,7 +278,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Effectively prioritized tasks and managed competing deadlines across multiple academic and personal projects. Developed efficient workflows that maximized productivity while maintaining high-quality standards.
+                      Effectively prioritized tasks and managed competing deadlines across multiple academic and personal projects. Developed efficient workflows that maximized productivity while maintaining quality.
                     </p>
                   </CardContent>
                 </Card>
@@ -302,7 +300,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Applied systematic analysis to break down complex problems into manageable components. Utilized data-driven approaches to validate hypotheses and optimize system performance across various engineering applications.
+                      Worked effectively in diverse teams combining engineering, design, and research knowledge. Experience varsity wrestling strengthened communication, coachability.
                     </p>
                   </CardContent>
                 </Card>

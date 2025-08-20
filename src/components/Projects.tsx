@@ -4,7 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { ExternalLink, Github, Search } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { ExternalLink, Github, Search, Play } from "lucide-react";
 import { 
   curricularProjects, 
   extracurricularProjects, 
@@ -16,6 +17,31 @@ const Projects = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [curricularVisible, setCurricularVisible] = useState(3);
   const [extracurricularVisible, setExtracurricularVisible] = useState(3);
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState<string | null>(null);
+
+  // Helper function to check if URL is a video
+  const isVideo = (url: string) => {
+    return url.endsWith('.mp4') || url.endsWith('.webm') || url.endsWith('.mov') || url.endsWith('.avi');
+  };
+
+  // Helper function to handle project demo action
+  const handleProjectDemo = (project: Project) => {
+    if (!project.demoUrl) return;
+    
+    if (isVideo(project.demoUrl)) {
+      setCurrentVideo(project.demoUrl);
+      setVideoModalOpen(true);
+    } else {
+      // Download PDF
+      const link = document.createElement('a');
+      link.href = project.demoUrl;
+      link.download = `${project.title.replace(/\s+/g, '_')}.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
 
   // Filter projects based on search term
   const filteredCurricularProjects = useMemo(() => {
@@ -71,19 +97,14 @@ const Projects = () => {
           <Button 
             size="sm" 
             className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-            onClick={() => {
-              if (project.demoUrl) {
-                const link = document.createElement('a');
-                link.href = project.demoUrl;
-                link.download = `${project.title.replace(/\s+/g, '_')}.pdf`;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }
-            }}
+            onClick={() => handleProjectDemo(project)}
             disabled={!project.demoUrl}
           >
-            <ExternalLink className="w-4 h-4 mr-2" />
+            {project.demoUrl && isVideo(project.demoUrl) ? (
+              <Play className="w-4 h-4 mr-2" />
+            ) : (
+              <ExternalLink className="w-4 h-4 mr-2" />
+            )}
             {project.status === "In Progress" ? "View Project Progress" : "View Project"}
           </Button>
           <Button 
@@ -217,6 +238,27 @@ const Projects = () => {
             onLoadMore={() => setExtracurricularVisible(prev => prev + 3)}
           />
         </div>
+
+        {/* Video Modal */}
+        <Dialog open={videoModalOpen} onOpenChange={setVideoModalOpen}>
+          <DialogContent className="max-w-4xl w-full">
+            <DialogHeader>
+              <DialogTitle>Project Video</DialogTitle>
+            </DialogHeader>
+            {currentVideo && (
+              <div className="aspect-video">
+                <video
+                  src={currentVideo}
+                  controls
+                  className="w-full h-full rounded-lg"
+                  autoPlay
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
 
       </div>
     </section>

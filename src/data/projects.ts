@@ -67,7 +67,7 @@ export const extracurricularProjects: Project[] = [
     status: "Completed",
     image: "🎵",
     category: "extracurricular",
-    demoUrl: "",
+    demoUrl: "/src/assets/videos/stepper-motor-organ.mp4", // Update this path when you upload the video
     githubUrl: "",
     featured: true
   },

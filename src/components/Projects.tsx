@@ -22,7 +22,8 @@ const Projects = () => {
 
   // Helper function to check if URL is a video
   const isVideo = (url: string) => {
-    return url.endsWith('.mp4') || url.endsWith('.webm') || url.endsWith('.mov') || url.endsWith('.avi');
+    const lowerUrl = url.toLowerCase();
+    return lowerUrl.endsWith('.mp4') || lowerUrl.endsWith('.webm') || lowerUrl.endsWith('.mov') || lowerUrl.endsWith('.avi');
   };
 
   // Helper function to handle project demo action

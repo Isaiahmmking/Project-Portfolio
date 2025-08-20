@@ -79,7 +79,12 @@ const Contact = () => {
                   variant="outline" 
                   size="sm"
                   className="border-primary/30 hover:bg-primary/5"
-                  onClick={() => window.open('https://github.com/Isaiahmmking', '_blank')}
+                  onClick={(e) => {
+                    console.log('GitHub button clicked');
+                    e.preventDefault();
+                    const url = 'https://github.com/Isaiahmmking';
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                  }}
                 >
                   <Github className="w-4 h-4 mr-2" />
                   GitHub

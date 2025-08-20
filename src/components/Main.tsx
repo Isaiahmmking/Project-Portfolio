@@ -31,7 +31,7 @@ const Hero = () => {
               {/* Introduction */}
               <div className="mb-8">
                 <p className="text-lg leading-relaxed">
-                  Welcome to my personal portfolio! This site showcases a collection of my projects I have finish and am currently working on. It also provides a complete overview of the tools, frameworks, and skills I have expereince in.
+                  Welcome to my personal portfolio! This site showcases a collection of the projects I have finished and am currently working on. It also provides a complete overview of the tools, frameworks, and skills I have expereince in.
                 </p>
               </div>
               

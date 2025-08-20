@@ -75,7 +75,7 @@ const Projects = () => {
             disabled={!project.demoUrl}
           >
             <ExternalLink className="w-4 h-4 mr-2" />
-            View Project
+            {project.status === "In Progress" ? "View Project Progress" : "View Project"}
           </Button>
           <Button 
             size="sm" 

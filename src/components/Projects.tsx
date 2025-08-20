@@ -71,7 +71,16 @@ const Projects = () => {
           <Button 
             size="sm" 
             className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-            onClick={() => project.demoUrl && window.open(project.demoUrl, '_blank')}
+            onClick={() => {
+              if (project.demoUrl) {
+                const link = document.createElement('a');
+                link.href = project.demoUrl;
+                link.download = `${project.title.replace(/\s+/g, '_')}.pdf`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }
+            }}
             disabled={!project.demoUrl}
           >
             <ExternalLink className="w-4 h-4 mr-2" />

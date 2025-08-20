@@ -3,8 +3,39 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Github, FileText } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const { firstName, lastName, email, subject, message } = formData;
+    const fullName = `${firstName} ${lastName}`.trim();
+    
+    // Create mailto URL with pre-filled data
+    const mailtoUrl = `mailto:Isaiahmking04@gmail.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(
+      `Hi Isaiah,\n\nName: ${fullName}\nEmail: ${email}\n\nMessage:\n${message}\n\nBest regards,\n${fullName}`
+    )}`;
+    
+    // Open email client
+    window.location.href = mailtoUrl;
+  };
   return (
     <section id="contact" className="py-20 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
@@ -117,19 +148,31 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       First Name
                     </label>
-                    <Input placeholder="John" className="border-border" />
+                    <Input 
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      placeholder="John" 
+                      className="border-border" 
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       Last Name
                     </label>
-                    <Input placeholder="Doe" className="border-border" />
+                    <Input 
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      placeholder="Doe" 
+                      className="border-border" 
+                    />
                   </div>
                 </div>
                 
@@ -138,7 +181,10 @@ const Contact = () => {
                     Email
                   </label>
                   <Input 
+                    name="email"
                     type="email" 
+                    value={formData.email}
+                    onChange={handleInputChange}
                     placeholder="john.doe@example.com" 
                     className="border-border" 
                   />
@@ -149,6 +195,9 @@ const Contact = () => {
                     Subject
                   </label>
                   <Input 
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
                     placeholder="Project Collaboration Opportunity" 
                     className="border-border" 
                   />
@@ -159,6 +208,9 @@ const Contact = () => {
                     Message
                   </label>
                   <Textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     placeholder="Tell me about your project or how we can work together..."
                     rows={5}
                     className="border-border resize-none"

@@ -34,10 +34,11 @@ const Projects = () => {
       setCurrentVideo(project.demoUrl);
       setVideoModalOpen(true);
     } else {
-      // Download PDF
+      // Download PDF - create proper download link
       const link = document.createElement('a');
       link.href = project.demoUrl;
-      link.download = `${project.title.replace(/\s+/g, '_')}.pdf`;
+      link.download = project.demoUrl.split('/').pop() || `${project.title.replace(/\s+/g, '_')}.pdf`;
+      link.target = '_blank';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

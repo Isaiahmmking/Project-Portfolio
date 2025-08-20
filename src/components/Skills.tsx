@@ -113,8 +113,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Led cross-functional engineering teams through complex projects, coordinating between hardware and software developers. Successfully managed project timelines and deliverables while fostering collaborative team environments.
-                    </p>
+                      Gained extensive experience leading group projects through my engineering coursework, including coordinating collaboration between hardware and software teams on technical projects. Strengthened leadership and organizational skills through roles outside the classroom, including my position as a president in jazz band, where I managed group performance goals and fostered teamwork. Across both academic and extracurricular settings, I consistently oversaw timelines, ensured deliverable quality, and created collaborative environments that emphasized problem-solving and accountability.                    </p>
                   </CardContent>
                 </Card>
 

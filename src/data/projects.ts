@@ -42,7 +42,7 @@ export const curricularProjects: Project[] = [
     status: "Completed",
     image: opAmpAudioFilter,
     category: "curricular",
-    demoUrl: "",
+    demoUrl: "/src/assets/pdfs/A9-1.pdf (1).pdf",
     githubUrl: "",
     featured: true
   }

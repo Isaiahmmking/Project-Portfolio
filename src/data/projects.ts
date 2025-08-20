@@ -31,7 +31,7 @@ export const curricularProjects: Project[] = [
     status: "Completed",
     image: "🚨",
     category: "curricular",
-    demoUrl: "",
+    demoUrl: "/src/assets/videos/delta-1_GbGo1mUY.mp4",
     githubUrl: "",
     featured: true
   },

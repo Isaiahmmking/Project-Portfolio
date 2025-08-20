@@ -38,20 +38,7 @@ const Projects = () => {
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <CardHeader>
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex-shrink-0">
-            {typeof project.image === 'string' && project.image.startsWith('/') ? (
-              <div className="w-20 h-20 bg-white rounded-lg p-2 shadow-sm border border-border/50">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-contain rounded-md"
-                />
-              </div>
-            ) : (
-              <div className="text-4xl">{project.image}</div>
-            )}
-          </div>
+        <div className="flex items-center justify-end mb-4">
           <Badge 
             variant={project.status === "Completed" ? "default" : "secondary"}
             className={project.status === "Completed" ? "bg-primary text-primary-foreground" : ""}

@@ -56,7 +56,7 @@ export const extracurricularProjects: Project[] = [
     status: "In Progress",
     image: "🐭",
     category: "extracurricular",
-    demoUrl: "",
+    demoUrl: "/src/assets/pdfs/rodentProject.pdf",
     githubUrl: "",
     featured: true
   },
@@ -67,7 +67,7 @@ export const extracurricularProjects: Project[] = [
     status: "Completed",
     image: "🎵",
     category: "extracurricular",
-    demoUrl: "/src/assets/videos/stepper-motor-organ.mp4", // Update this path when you upload the video
+    demoUrl: "/src/assets/videos/steppermotor.MOV",
     githubUrl: "",
     featured: true
   },

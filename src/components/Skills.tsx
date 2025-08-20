@@ -96,6 +96,60 @@ const Skills = () => {
             </div>
           ))}
         </div>
+        
+        {/* Soft Skills Section */}
+        <div className="mt-16 text-center">
+          <h3 className="text-3xl font-bold text-foreground mb-8">
+            Soft Skills
+          </h3>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="space-y-4">
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Leadership & Team Management</span>
+              </div>
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Problem Solving</span>
+              </div>
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Critical Thinking</span>
+              </div>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Communication & Presentation</span>
+              </div>
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Project Management</span>
+              </div>
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Adaptability</span>
+              </div>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Time Management</span>
+              </div>
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Collaboration</span>
+              </div>
+              <div className="flex items-center text-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-lg">Analytical Thinking</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

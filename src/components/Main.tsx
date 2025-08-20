@@ -12,25 +12,25 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center">
-      <div className="w-full h-full flex">
+      <div className="w-full h-full flex flex-col md:flex-row">
         {/* Left Side - Dark with Name and Content */}
-        <div className="w-1/2 bg-primary text-primary-foreground relative overflow-hidden">
+        <div className="w-full md:w-1/2 bg-primary text-primary-foreground relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:50px_50px]" />
           </div>
           
-          <div className="relative z-10 h-full flex flex-col justify-center px-12 lg:px-16">
+          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-16 py-8 md:py-0">
             <div className="animate-fade-in">
               {/* Name */}
-              <h1 className="text-6xl lg:text-8xl font-bold mb-8 leading-none">
+              <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-8 leading-none">
                 Isaiah
                 <span className="block">King</span>
               </h1>
               
               {/* Introduction */}
-              <div className="mb-8">
-                <p className="text-lg leading-relaxed">
+              <div className="mb-6 md:mb-8">
+                <p className="text-base md:text-lg leading-relaxed">
                   Welcome to my personal portfolio! This site showcases a collection of the projects I have finished and am currently working on. It also provides a complete overview of the tools, frameworks, and skills I have expereince in.
                 </p>
               </div>
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         
         {/* Right Side - Large Portrait */}
-        <div className="w-1/2 relative overflow-hidden">
+        <div className="w-full md:w-1/2 relative overflow-hidden min-h-[300px] md:min-h-screen">
           <img 
             src={isaiahPortrait}
             alt="Isaiah King Portrait" 

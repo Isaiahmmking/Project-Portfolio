@@ -176,7 +176,7 @@ const Projects = () => {
         <div className="mb-8 animate-fade-in">
           <h3 className="text-lg font-semibold mb-4 text-center text-foreground">Skills & Technologies</h3>
           <div className="relative overflow-hidden bg-gradient-subtle rounded-lg p-4 border border-border">
-            <div className="flex animate-marquee space-x-4">
+            <div className="flex animate-marquee space-x-4 will-change-transform">
               {/* First set of skills */}
               {getAllTags().filter(tag => tag !== "All").map((skill) => (
                 <Badge

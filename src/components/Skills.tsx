@@ -113,7 +113,8 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Gained extensive experience leading group projects through my engineering coursework, including coordinating collaboration between hardware and software teams on technical projects. Gained leadership and organizational skills through my role as president of jazz band, where I managed group performance goals and fostered teamwork.      </p>
+                      Led cross-functional engineering teams through complex projects, coordinating between hardware and software developers. Managed project timelines and deliverables while fostering collaborative team environments.
+                    </p>
                   </CardContent>
                 </Card>
 
@@ -123,7 +124,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Developed systematic approaches to tackle complex engineering challenges, from circuit design optimization to program development. Consistently identified root causes and implemented innovative solutions under tight deadlines.
+                      Developed systematic approaches to tackle complex engineering challenges, from circuit design optimization to algorithm development. Identified root causes and implemented innovative solutions under tight deadlines.
                     </p>
                   </CardContent>
                 </Card>

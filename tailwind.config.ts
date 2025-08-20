@@ -104,6 +104,10 @@ export default {
 				'marquee': {
 					'0%': { transform: 'translateX(0%)' },
 					'100%': { transform: 'translateX(-50%)' }
+				},
+				'scroll': {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-50%)' }
 				}
 			},
 			animation: {
@@ -112,7 +116,8 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
-				'marquee': 'marquee 20s linear infinite'
+				'marquee': 'marquee 20s linear infinite',
+				'scroll': 'scroll 30s linear infinite'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',

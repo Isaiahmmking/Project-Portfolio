@@ -39,15 +39,17 @@ const Projects = () => {
     >
       <CardHeader>
         <div className="flex items-center justify-between mb-4">
-          <div className="text-4xl">
+          <div className="flex-shrink-0">
             {typeof project.image === 'string' && project.image.startsWith('/') ? (
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-16 h-16 object-cover rounded-lg"
-              />
+              <div className="w-20 h-20 bg-white rounded-lg p-2 shadow-sm border border-border/50">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-contain rounded-md"
+                />
+              </div>
             ) : (
-              project.image
+              <div className="text-4xl">{project.image}</div>
             )}
           </div>
           <Badge 

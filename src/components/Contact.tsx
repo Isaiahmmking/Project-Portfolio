@@ -88,7 +88,14 @@ const Contact = () => {
                   variant="outline" 
                   size="sm"
                   className="border-primary/30 hover:bg-primary/5"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/src/assets/pdfs/Isaiah-King_Resume.pdf';
+                    link.download = 'Isaiah-King_Resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
                 >
                   <FileText className="w-4 h-4 mr-2" />
                   Resume

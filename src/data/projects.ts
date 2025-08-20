@@ -31,7 +31,7 @@ export const curricularProjects: Project[] = [
     status: "Completed",
     image: "🚨",
     category: "curricular",
-    demoUrl: "/src/assets/videos/delta-1_GbGo1mUY.mp4",
+    demoUrl: "/videos/delta-1_GbGo1mUY.mp4",
     githubUrl: "",
     featured: true
   },
@@ -67,7 +67,7 @@ export const extracurricularProjects: Project[] = [
     status: "Completed",
     image: "🎵",
     category: "extracurricular",
-    demoUrl: "/src/assets/videos/steppermotor.MOV",
+    demoUrl: "/videos/steppermotor.MOV",
     githubUrl: "",
     featured: true
   },

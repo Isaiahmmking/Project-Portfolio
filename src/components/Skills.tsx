@@ -113,7 +113,9 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                    Gained extensive experience leading group projects through engineering coursework, coordinating collaboration between hardware and software teams while managing timelines and deliverables. Strengthened leadership and organizational skills outside the classroom as president of the jazz band, where I fostered teamwork, set performance goals, and built collaborative environments that emphasized problem-solving and accountability.                  </CardContent>
+                      Gained extensive experience leading group projects through engineering coursework, coordinating collaboration between hardware and software teams while managing timelines and deliverables. Strengthened leadership and organizational skills outside the classroom as president of the jazz band, where I fostered teamwork, set performance goals, and built collaborative environments that emphasized problem-solving and accountability.
+                    </p>
+                  </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px] bg-gradient-card border-border shadow-card hover:shadow-elegant transition-all duration-300">
@@ -212,7 +214,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                    Gained extensive experience leading group projects through engineering coursework, coordinating collaboration between hardware and software teams while managing timelines and deliverables. Strengthened leadership and organizational skills outside the classroom as president of the jazz band, where I fostered teamwork, set performance goals, and built collaborative environments that emphasized problem-solving and accountability.                  </CardContent>
+                      Gained extensive experience leading group projects through engineering coursework, coordinating collaboration between hardware and software teams while managing timelines and deliverables. Strengthened leadership and organizational skills outside the classroom as president of the jazz band, where I fostered teamwork, set performance goals, and built collaborative environments that emphasized problem-solving and accountability.
                     </p>
                   </CardContent>
                 </Card>
@@ -223,7 +225,7 @@ const Skills = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Developed systematic, repeatable approaches to solve complex problems through expereince with engineering coursework and team labs—using root-cause analysis. Also have experience under pressure as a lifeguard assisting guests, creating a cordinated responses, and implementing practical fixes while maintaining safety and service. Consistently delivered results under tight timelines and documented takeaways as needed.                    </p>
+                      Developed systematic, repeatable approaches to solve complex problems through expereince with engineering coursework and team labs—using root-cause analysis. Also have experience under pressure as a lifeguard assisting guests, creating a cordinated responses, and implementing practical fixes while maintaining safety and service. Consistently delivered results under tight timelines and documented takeaways as needed.
                     </p>
                   </CardContent>
                 </Card>
